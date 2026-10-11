@@ -293,3 +293,88 @@ button:disabled {
 .seatmap {
   max-width: 100%;
 }
+
+.details-actions {
+  margin-top: 25px;
+  border-top: 1px solid #eee;
+  padding-top: 15px;
+}
+
+.register-box button {
+  margin-right: 10px;
+}
+
+.btn-red {
+  background-color: #c0392b;
+}
+
+.btn-red:hover {
+  background-color: #a03024;
+}
+
+.success {
+  color: #1e7e34;
+  background: #e6f4ea;
+  padding: 8px;
+  border-radius: 4px;
+}
+
+/* my events */
+.tabs {
+  margin-bottom: 15px;
+}
+
+.tab {
+  background-color: #ddd;
+  color: #333;
+  margin-right: 8px;
+}
+
+.tab:hover {
+  background-color: #ccc;
+}
+
+.tab.active {
+  background-color: #1e5bb8;
+  color: white;
+}
+
+.my-event {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  background: white;
+  padding: 12px;
+  margin-bottom: 12px;
+  border-radius: 6px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.15);
+  flex-wrap: wrap;
+}
+
+.my-event img {
+  width: 140px;
+  height: 90px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.my-event-info {
+  flex: 1;
+  min-width: 200px;
+}
+
+.my-event-info h3 {
+  margin: 0 0 6px 0;
+  font-size: 17px;
+}
+
+.my-event-info p {
+  margin: 3px 0;
+  font-size: 14px;
+}
+
+.my-event-actions {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
