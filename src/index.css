@@ -318,3 +318,63 @@ button:disabled {
   padding: 8px;
   border-radius: 4px;
 }
+
+/* my events */
+.tabs {
+  margin-bottom: 15px;
+}
+
+.tab {
+  background-color: #ddd;
+  color: #333;
+  margin-right: 8px;
+}
+
+.tab:hover {
+  background-color: #ccc;
+}
+
+.tab.active {
+  background-color: #1e5bb8;
+  color: white;
+}
+
+.my-event {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  background: white;
+  padding: 12px;
+  margin-bottom: 12px;
+  border-radius: 6px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.15);
+  flex-wrap: wrap;
+}
+
+.my-event img {
+  width: 140px;
+  height: 90px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.my-event-info {
+  flex: 1;
+  min-width: 200px;
+}
+
+.my-event-info h3 {
+  margin: 0 0 6px 0;
+  font-size: 17px;
+}
+
+.my-event-info p {
+  margin: 3px 0;
+  font-size: 14px;
+}
+
+.my-event-actions {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
