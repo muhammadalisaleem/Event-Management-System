@@ -255,3 +255,41 @@ button:disabled {
     transform: rotate(360deg);
   }
 }
+
+/* event details */
+.details {
+  background: white;
+  padding: 20px;
+  border-radius: 6px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.15);
+}
+
+.details-top {
+  display: flex;
+  gap: 25px;
+  margin-top: 15px;
+  flex-wrap: wrap;
+}
+
+.details-img {
+  width: 100%;
+  max-width: 450px;
+  border-radius: 6px;
+}
+
+.details-info {
+  flex: 1;
+  min-width: 250px;
+}
+
+.details-info .badge {
+  margin-right: 6px;
+}
+
+.details-section {
+  margin-top: 20px;
+}
+
+.seatmap {
+  max-width: 100%;
+}
