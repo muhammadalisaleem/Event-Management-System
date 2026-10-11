@@ -4,6 +4,7 @@ import { useDispatch, useSelector } from 'react-redux'
 import { fetchEventDetails } from '../features/eventsSlice'
 import { formatEvent, formatDate, formatTime } from '../utils/formatEvent'
 import Loader from '../components/Loader'
+import RegisterButton from '../components/RegisterButton'
 
 function EventDetails() {
   const { id } = useParams()
@@ -81,9 +82,12 @@ function EventDetails() {
         </div>
       )}
 
-      <a href={event.url} target="_blank" rel="noreferrer" className="btn-link">
-        Buy Tickets on Ticketmaster
-      </a>
+      <div className="details-actions">
+        <RegisterButton event={event} />
+        <a href={event.url} target="_blank" rel="noreferrer" className="btn-link">
+          Buy Tickets on Ticketmaster
+        </a>
+      </div>
     </div>
   )
 }
