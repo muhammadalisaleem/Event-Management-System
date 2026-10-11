@@ -293,3 +293,28 @@ button:disabled {
 .seatmap {
   max-width: 100%;
 }
+
+.details-actions {
+  margin-top: 25px;
+  border-top: 1px solid #eee;
+  padding-top: 15px;
+}
+
+.register-box button {
+  margin-right: 10px;
+}
+
+.btn-red {
+  background-color: #c0392b;
+}
+
+.btn-red:hover {
+  background-color: #a03024;
+}
+
+.success {
+  color: #1e7e34;
+  background: #e6f4ea;
+  padding: 8px;
+  border-radius: 4px;
+}
