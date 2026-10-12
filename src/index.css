@@ -466,3 +466,41 @@ button:disabled {
   font-size: 13px;
   margin-top: 30px;
 }
+
+/* mobile */
+@media (max-width: 600px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+
+  .nav-links a {
+    margin-right: 10px;
+    font-size: 14px;
+  }
+
+  .hero {
+    padding: 25px 15px;
+  }
+
+  .hero h1 {
+    font-size: 24px;
+  }
+
+  .search-bar input,
+  .search-bar select,
+  .search-bar button {
+    width: 100%;
+    flex: none;
+  }
+
+  .my-event img {
+    width: 100%;
+    height: 150px;
+  }
+
+  .container {
+    padding: 15px;
+  }
+}
