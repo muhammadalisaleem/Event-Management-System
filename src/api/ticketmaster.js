@@ -1,6 +1,12 @@
 const API_KEY = import.meta.env.VITE_TM_API_KEY
 const BASE_URL = 'https://app.ticketmaster.com/discovery/v2'
 
+function checkKey() {
+  if (!API_KEY) {
+    throw new Error('API key is missing. Add VITE_TM_API_KEY in the .env file.')
+  }
+}
+
 // get list of events with search and filter options
 export async function getEvents(filters) {
   const params = new URLSearchParams()
@@ -21,6 +27,7 @@ export async function getEvents(filters) {
   }
   params.append('startDateTime', start.toISOString().split('.')[0] + 'Z')
 
+  checkKey()
   const res = await fetch(`${BASE_URL}/events.json?${params.toString()}`)
   if (!res.ok) {
     throw new Error('Could not load events. Please check your API key.')
@@ -34,6 +41,7 @@ export async function getEvents(filters) {
 
 // get one event by id
 export async function getEventById(id) {
+  checkKey()
   const res = await fetch(`${BASE_URL}/events/${id}.json?apikey=${API_KEY}`)
   if (!res.ok) {
     throw new Error('Event not found')
